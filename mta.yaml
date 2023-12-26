@@ -17,6 +17,7 @@ modules:
       buildpack: nodejs_buildpack
     build-parameters:
       builder: npm
+      ignore: ["default-env.json", "env"]
     provides:
       - name: srv-api # required by consumers of CAP services (e.g. approuter)
         properties:
